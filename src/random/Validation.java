@@ -12,10 +12,27 @@ public class Validation {
 		
 		Random randomMaker = new Random();
 		
-		int randomNumber = randomMaker.nextInt(5);
+		
+		for (int i = 0; i < 10; i++) {
+			int randomNumber = randomMaker.nextInt(5);
 		
 		System.out.println(randomNumber);
-
+		if(randomNumber==0) {
+			JOptionPane.showMessageDialog(null, "you suck");
+		}
+		if(randomNumber==1) {
+			JOptionPane.showMessageDialog(null, "you stink");
+		}
+		if(randomNumber==2) {
+			JOptionPane.showMessageDialog(null, "your trash");
+		}
+		if(randomNumber==3) {
+			JOptionPane.showMessageDialog(null, "your a fool");
+		}
+		if(randomNumber==4) {
+			JOptionPane.showMessageDialog(null, "you have a lack of brain cells");
+		}
+		}
 		// 1. Use each value of randomNumber to give the user a random compliment.
 
 		// 2. Repeat all the code above 10 times
